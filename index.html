@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SecureScan</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="#">🛡 SecureScan</a><span>File & URL Security Analysis</span></header>
+<main><p class="eyebrow">THREAT ANALYSIS WORKSPACE</p><h1>Check a file or URL.<br><em>Stay one step ahead.</em></h1><p class="sub">Submit a file or website address for analysis.</p>
+<section class="card"><div class="tabs"><button class="tab active" data-tab="file">File</button><button class="tab" data-tab="url">URL</button></div>
+<div id="file-panel" class="panel"><label id="dropzone" class="dropzone" for="fileInput"><b>↑</b><strong>Drag and drop your file here</strong><span>or browse files from your computer</span><small>Maximum 32 MB</small></label><input id="fileInput" type="file" hidden><p id="selectedFile"></p><button id="scanFileBtn" disabled>Analyze file →</button></div>
+<div id="url-panel" class="panel hidden"><label for="urlInput">Website URL</label><input id="urlInput" type="url" placeholder="https://example.com"><button id="scanUrlBtn">Analyze URL →</button></div>
+<div class="notice">Learning project. Do not submit private or confidential files. VirusTotal submissions may be shared.</div></section>
+<section id="result" class="result hidden" aria-live="polite"></section>
+<section class="features"><article><b>⌕</b><h3>File analysis</h3><p>Upload a file to the Node.js backend.</p></article><article><b>↗</b><h3>URL analysis</h3><p>Submit a website address for analysis.</p></article><article><b>◇</b><h3>Beginner project</h3><p>HTML, CSS, JavaScript and Node.js.</p></article></section></main>
+<footer>SecureScan · Educational project, not an antivirus product</footer><div id="toast"></div><script src="script.js"></script></body></html>
